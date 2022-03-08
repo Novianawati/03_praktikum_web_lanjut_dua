@@ -48,7 +48,7 @@
 							<option>€ EUR</option>
 						</select>
                     </div>
-                    <div class="right-phone-box">
+                    <div class="right -phone-box">
                         <p>Call US :- <a href="#"> +11 900 800 100</a></p>
                     </div>
                     <div class="our-link">
@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>ABOUT US</h2>
+                    <h2>TENTANG KAMI</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">ABOUT US</li>

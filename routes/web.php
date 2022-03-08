@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\shopcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +22,22 @@ Route::get('/about-us', function () {
 });
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('shop')->group(function () {
+    Route::get('/', function () {
+        return view('shop');
+    });
+    Route::get('/sidebar-shop', [shopcontroller::class, 'ss']);
+    Route::get('/shop-detail', [shopcontroller::class, 'sd']);
+    Route::get('/cart', [shopcontroller::class, 'c']);
+    Route::get('/checkout', [shopcontroller::class, 'co']);
+    Route::get('/myaccount', [shopcontroller::class, 'ma']);
+    Route::get('/wishlist', [shopcontroller::class, 'w']);
+});
+
+Route::get('/gallery/{id}', function () {
+    return view('gallery', ['id' => '1']);
+});
+
+Route::get('/contact-us', function () {
+    return view('contactus');
+});
