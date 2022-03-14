@@ -10,4 +10,5 @@ class Shoplist extends Model
     use HasFactory;
 
     protected $table = 'Shoplist';
+    protected $primaryKey = 'id';
 }
