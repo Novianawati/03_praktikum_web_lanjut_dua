@@ -15,9 +15,9 @@ class CreateShoplistsTable extends Migration
     {
         Schema::create('shoplists', function (Blueprint $table) {
             $table->id();
-            $table->string('productname', 255)->wishlist();
-            $table->string('unitprice', 100)->wishlist();
-            $table->text('stock')->nullable();
+            $table->string('productname', 255);
+            $table->string('unitprice', 100);
+            $table->string('stock', 100);
             $table->boolean('draft')->default(false);
             $table->timestamps();
         });

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\shopcontroller;
+use App\Http\Controllers\ShoplistController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,7 +32,7 @@ Route::prefix('shop')->group(function () {
     Route::get('/cart', [shopcontroller::class, 'c']);
     Route::get('/checkout', [shopcontroller::class, 'co']);
     Route::get('/myaccount', [shopcontroller::class, 'ma']);
-    Route::get('/wishlist', [shopcontroller::class, 'w']);
+    Route::get('/wishlist', [ShoplistController::class, 'w']);
 });
 
 Route::get('/gallery/{id}', function () {

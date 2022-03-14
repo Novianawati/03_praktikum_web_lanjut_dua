@@ -9,6 +9,6 @@ class Shoplist extends Model
 {
     use HasFactory;
 
-    protected $table = 'Shoplist';
+    protected $table = 'Shoplists';
     protected $primaryKey = 'id';
 }

@@ -18,16 +18,14 @@ class ShoplistSeeder extends Seeder
             [
                 'productname' => 'Watermelon',
                 'unitprice' => '50000',
-                'stock' => 5,
-                'draft'=> 0
+                'stock' => '5'
             ],
             [
                 'productname' => 'Pear',
                 'unitprice' => '12000',
-                'stock' => 10,
-                'draft'=> 0
+                'stock' => '10'
             ]
         ];
-        DB::table('Shoplist')->insert($data);
+        DB::table('shoplists')->insert($data);
     }
 }

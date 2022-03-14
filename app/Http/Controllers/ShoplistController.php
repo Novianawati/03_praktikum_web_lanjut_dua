@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Shoplist;
 
 class ShoplistController extends Controller
 {
-    public function wishlist(){
+    public function w(){
         $data = Shoplist::all();
-        return view('wishlist', ['Shoplist' => $data]);
+        
+        return view('wishlist', ['barang' => $data]);
     }
+    
 }

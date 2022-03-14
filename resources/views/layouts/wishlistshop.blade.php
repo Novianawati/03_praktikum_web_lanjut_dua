@@ -229,13 +229,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($Shoplist as $b)
+                                @foreach($barang as $b)
                                     <tr>
-                                        <td>{{ $b->$id }}</td>
-                                        <td>{{ $b->$productname }}</td>
-                                        <td>{{ $b->$unitprice }}</td>
-                                        <td>{{ $b->$stock }}</td>
-                                        <td>{{ $b->$draft }}</td>
+                                        <td>{{ $b->id }}</td>
+                                        <td>{{ $b->productname }}</td>
+                                        <td>{{ $b->unitprice }}</td>
+                                        <td>{{ $b->stock }}</td>
+                                        <td>{{ $b->draft }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
